@@ -7,7 +7,7 @@ cd paru
 makepkg -si
 
 # Install necessary packages
-sudo pacman -S waybar fuzzel mako
+sudo pacman -S waybar fuzzel mako thunar thunar-archive-plugin
 paru -S matugen-bin
 
 # Starship
