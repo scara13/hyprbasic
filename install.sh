@@ -14,11 +14,11 @@ paru -S matugen-bin
 curl -sS https://starship.rs/install.sh | sh
 eval "$(starship init bash)"
 
-# Configure colors
-cp matugen .config/
-
 # Manual or user configurations
 "source = manual.conf" >> hyprland.conf
 
 # Transfer configs
 cp .config/* ~/.config/
+
+# Initiate matugen
+matugen -i wallpaper/7mSSR7w.png
