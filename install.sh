@@ -18,7 +18,8 @@ eval "$(starship init bash)"
 "source = manual.conf" >> hyprland.conf
 
 # Transfer configs
-cp .config/* ~/.config/
+cp -r .config/fuzzel .config/kitty .config/mako .config/matugen .config/sunsetr .config/waybar ~/.config/
+cp .config/hypr/* ~/.config/hypr/
 
 # Initiate matugen
 matugen -i wallpaper/7mSSR7w.png
