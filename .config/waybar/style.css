@@ -1,0 +1,86 @@
+@import "colors.css";
+
+* {
+	margin: 2px 2px 0px 2px;
+    border: none;
+    border-radius: 0;
+    font-family: SF Pro Display, Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: @primary;
+}
+
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color: white;
+}
+
+#workspaces {
+    background: @surface;
+    border-radius: 20px;
+}
+
+#workspaces button {
+    color: @primary;
+    transition: margin 0.20s ease, background 0.20s ease, color 0.20s ease;
+    border-radius: 12px;
+}
+
+#workspaces button.active {
+    background: @primary;
+    color: @surface;
+}
+
+#mode, #clock, #battery {
+    padding: 0 10px;
+}
+
+#mode {
+    background: #64727D;
+    border-bottom: 0px solid white;
+}
+
+#battery {
+    background-color: #ffffff;
+    color: black;
+}
+
+#battery.charging {
+    color: white;
+    background-color: #26A65B;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#clock,
+#backlight,
+#wireplumber,
+#network,
+#battery {
+	padding: 10px;
+	background-color: @background;
+	border-radius: 20px;
+	color: @primary;
+}
