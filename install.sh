@@ -19,3 +19,6 @@ cp matugen .config/
 
 # Manual or user configurations
 "source = manual.conf" >> hyprland.conf
+
+# Transfer configs
+cp .config/* ~/.config/
