@@ -1,7 +1,5 @@
 <h1>minimalist_hypr</h1>
 
-<img src="images/showcase.png" alt="showcase" align="center">
-
 <p align="center">This is a minimal dotfiles focused on stability and everyday use. It aims to simplify using window managers and promote a productive workspace.</p>
 
 ---
