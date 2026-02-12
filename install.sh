@@ -16,11 +16,10 @@ if [[ "$XDG_CURRENT_DESKTOP" == "Hyprland" ]] && grep -qi "arch" /etc/os-release
 	curl -sS https://starship.rs/install.sh | sh
 	eval "$(starship init bash)"
 
-	# Manual or user configurations
-	"source = manual.conf" >> hyprland.conf
-
 	# Transfer configs
 	cp -r .config/fuzzel .config/kitty .config/mako .config/matugen .config/sunsetr .config/waybar ~/.config/
+	mkdir -r ~/.cache/minimalist_dotfiles/backups
+	zip ~/.cache/minimalist_dotfiles/backups/old_hyprland_configs.zip ~/.config/hypr/*
 	cp .config/hypr/* ~/.config/hypr/
 
 	# Initiate matugen
