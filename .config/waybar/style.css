@@ -1,86 +1,73 @@
 @import "colors.css";
 
 * {
-	margin: 2px 2px 0px 2px;
+	all: unset;
     border: none;
     border-radius: 0;
-    font-family: SF Pro Display, Helvetica, Arial, sans-serif;
-    font-size: 0.9rem;
-    min-height: 0;
+    font: bold 14px "Iosevka Nerd Font Propo";
 }
 
+#window {
+	padding: 0px 8px;
+	margin: 0px;
+}
 window#waybar {
-    background: transparent;
-    color: @primary;
+	background: @background; 
+	border-radius: 5px;
+	color: @on_background;
+	padding: 0px 30px;
 }
 
-tooltip {
-  background: rgba(43, 48, 59, 0.5);
-  border: 1px solid rgba(100, 114, 125, 0.5);
-}
-tooltip label {
-  color: white;
-}
-
-#workspaces {
-    background: @surface;
-    border-radius: 20px;
+#workspaces {   
+	background: @on_background;
+	border-radius: 5px;
+	margin: 8px;
 }
 
 #workspaces button {
-    color: @primary;
-    transition: margin 0.20s ease, background 0.20s ease, color 0.20s ease;
-    border-radius: 12px;
+	min-width: 3px;
+    padding: 0px 5px;
+    margin: 4px 3px;
+    border-radius: 20px;
+    border: 0px;
+    color: @on_primary_container;
+    background-color: @secondary_container;
+    transition: all 0.3s ease-in-out; 
 }
 
 #workspaces button.active {
-    background: @primary;
-    color: @surface;
+    color: @on_primary;
+    background: @on_primary;
+    border-radius: 15px;
+    min-width: 40px;
+    transition: all 0.3s ease-in-out;
 }
 
-#mode, #clock, #battery {
-    padding: 0 10px;
+tooltip {
+	background: @background;
+	color: @on_background;
 }
 
-#mode {
-    background: #64727D;
-    border-bottom: 0px solid white;
-}
-
-#battery {
-    background-color: #ffffff;
-    color: black;
-}
-
-#battery.charging {
-    color: white;
-    background-color: #26A65B;
-}
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: black;
-    }
-}
-
-#battery.warning:not(.charging) {
-    background: #f53c3c;
-    color: white;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: steps(12);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-#clock,
-#backlight,
-#wireplumber,
-#network,
-#battery {
-	padding: 10px;
-	background-color: @background;
-	border-radius: 20px;
+#clock, #wireplumber {
+	background: @primary_container;
+	padding: 5px;
+	border-radius: 5px;
 	color: @primary;
+	margin: 6px;
+}
+
+#network, #battery {
+	background: @secondary_container;
+	color: @secondary;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 6px;
+}
+
+#backlight {
+	background: @tertiary_container;
+	color: @tertiary;
+	padding:5px;
+	border-radius: 5px;
+	margin: 6px;
 }

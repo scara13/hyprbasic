@@ -1,14 +1,26 @@
 {
-    "layer": "top",
-    "modules-left": ["clock","hyprland/window"],
-    "modules-center": ["hyprland/workspaces"],
+	"margin": 0,
+	"height": 0,
+	"layer": "top",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
     "modules-right": ["network","wireplumber","backlight","battery"],
     "battery": {
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""]
     },
     "clock": {
-        "format-alt": "{:%a, %d. %b  %H:%M}"
+        "format": "{:%A, %B %d, %Y (%R)}  ",
+        "tooltip-format": "<tt><span size='12pt'>{calendar}</span></tt>",
+		"calendar": {
+			"format": {
+                "months":     "<span color='#ffead3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+            	"today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+		}
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
@@ -32,11 +44,11 @@
 		"format": "{icon}",
   		"on-click": "activate",
   		"format-icons": {
-    		"1": "1",
-    		"2": "2",
-    		"3": "3",
-    		"4": "4",
-    		"5": "5",
+    		"1": "",
+    		"2": "",
+    		"3": "",
+    		"4": "",
+    		"5": "",
   			},
            "persistent-workspaces": {
                  "*": 5, // 5 workspaces by default on every monitor
