@@ -50,7 +50,3 @@ post_hook = 'pywalfox update'
 input_path = 'templates/mako'
 output_path = '~/.config/mako/mako-colors'
 post_hook = 'makoctl reload'
-
-[templates.starship]
-input_path = 'templates/starship-colors.toml'
-output_path = '~/.config/starship.toml'
