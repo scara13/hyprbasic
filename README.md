@@ -12,5 +12,6 @@ cd hyprbasic
 chmod +x install.sh
 ./install.sh
 ```
-## Disclaimer
-This dotfiles is for my personal use, there is an option to ignore the personal configurations. Considering the principle of being minimal, I might not add certain features such as AI.
+## Note
+- There is not yet a login manager.
+- Installation script has not been tested yet.
