@@ -11,8 +11,7 @@
 	padding: 0px 8px;
 	margin: 0px;
 }
-window#waybar {
-	background: @background; 
+window#waybar { 
 	border-radius: 5px;
 	color: @on_background;
 	padding: 0px 30px;
@@ -48,7 +47,7 @@ tooltip {
 	color: @on_background;
 }
 
-#clock, #wireplumber {
+#clock, #wireplumber, #battery {
 	background: @primary_container;
 	padding: 5px;
 	border-radius: 5px;
@@ -56,18 +55,10 @@ tooltip {
 	margin: 6px;
 }
 
-#network, #battery {
+#network, #backlight {
 	background: @secondary_container;
 	color: @secondary;
 	padding: 5px;
-	border-radius: 5px;
-	margin: 6px;
-}
-
-#backlight {
-	background: @tertiary_container;
-	color: @tertiary;
-	padding:5px;
 	border-radius: 5px;
 	margin: 6px;
 }
