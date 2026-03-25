@@ -1,6 +1,6 @@
-<h1>hyprbasic</h1>
+<h1>Hyprbasic</h1>
 
-<p align="center">This is a minimal dotfiles focused on stability and everyday use. It aims to simplify using window managers and promote a productive workspace.</p>
+<p align="center">This repository contains minimal dotfiles focused on stability and everyday use. It aims to simplify using window managers and promote a productive workspace.</p>
 
 ---
 
@@ -15,3 +15,4 @@ chmod +x install.sh
 ## Note
 - There is not yet a login manager.
 - Installation script has not been tested yet.
+- HDMI does not work out of the box.
