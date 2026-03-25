@@ -7,8 +7,8 @@ cd paru
 makepkg -si
 
 # Install necessary packages
-sudo pacman -S waybar fuzzel mako thunar thunar-archive-plugin fastfetch alacritty hyprshot
-paru -S matugen-bin sunsetr-bin
+sudo pacman -S waybar fuzzel mako thunar thunar-archive-plugin alacritty hyprshot firefox
+paru -S matugen-bin sunsetr-bin python-pywalfox
 
 # Transfer configs
 cp -r .config/fastfetch .config/fuzzel .config/alacritty .config/mako .config/matugen .config/sunsetr .config/waybar ~/.config/
@@ -28,4 +28,9 @@ if [ "$vimrc" = "y" ]; then
 	cp -i .vimrc ~/
 fi
 
-echo "Reboot your system."
+cat << 'EOF' 
+Post-installation instructions:
+1. Reboot your system.
+2. Add Pywalfox extension in Firefox and run `pywalfox update` afterwards.
+
+EOF
