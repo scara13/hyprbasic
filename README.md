@@ -1,4 +1,4 @@
-<h1>Hyprbasic</h1>
+<h1 align="center">Hyprbasic</h1>
 
 <p align="center">This repository contains minimal dotfiles focused on stability and everyday use. It aims to simplify using window managers and promote a productive workspace.</p>
 
