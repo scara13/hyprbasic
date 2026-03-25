@@ -16,3 +16,4 @@ chmod +x install.sh
 - There is not yet a login manager.
 - Installation script has not been tested yet.
 - HDMI does not work out of the box.
+- There is currently no uninstallation script.
