@@ -17,29 +17,24 @@ window#waybar {
 	padding: 0px 30px;
 }
 
-#workspaces {   
-	background: @on_background;
+#workspaces {
+	background-color: @secondary_container;
 	border-radius: 5px;
-	margin: 8px;
+	margin: 6px;
 }
-
 #workspaces button {
-	min-width: 3px;
-    padding: 0px 5px;
+	min-width: 20px;
+    padding: 0px 2px;
     margin: 4px 3px;
-    border-radius: 20px;
+    border-radius: 6px;
     border: 0px;
     color: @on_primary_container;
     background-color: @secondary_container;
-    transition: all 0.3s ease-in-out; 
 }
 
 #workspaces button.active {
-    color: @on_primary;
-    background: @on_primary;
-    border-radius: 15px;
-    min-width: 40px;
-    transition: all 0.3s ease-in-out;
+    color: @primary;
+    background: @primary_container;
 }
 
 tooltip {
