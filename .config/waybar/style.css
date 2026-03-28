@@ -4,7 +4,8 @@
 	all: unset;
     border: none;
     border-radius: 0;
-    font: bold 14px "Iosevka Nerd Font Propo";
+    font-weight: bold;
+	font-size: 14px;
 }
 
 #window {
