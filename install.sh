@@ -12,7 +12,7 @@ read -p "Proceed to installation? [y/n]: " proceed
 if [ "$proceed" = 'y' ]; then
 
 	# Set up an AUR helper
-	if command -v paru >/dev/null 2>&1; then
+	if ! command -v paru >/dev/null 2>&1; then
 		sudo pacman -S --needed base-devel
 		git clone https://aur.archlinux.org/paru.git
 		cd paru
@@ -20,12 +20,12 @@ if [ "$proceed" = 'y' ]; then
 	fi
 
 	# Install necessary packages
-	sudo pacman -S waybar fuzzel mako thunar thunar-archive-plugin alacritty hyprshot firefox
+	sudo pacman -S waybar fuzzel mako thunar adwaita-fonts thunar-archive-plugin alacritty hyprshot firefox
 	paru -S matugen-bin sunsetr-bin python-pywalfox awww-bin
 
 	# Transfer configs
 	SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-	cp -r "$SCRIPT_DIR/.config/"* ~/.config/
+	cp -r "$SCRIPT_DIR/.config/." ~/.config/
 
 	read -p "Include .bashrc? [y/n]: " bashrc
 	read -p "Include .vimrc? [y/n]: " vimrc
