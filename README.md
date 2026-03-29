@@ -1,4 +1,4 @@
-<h1 align="center">Hyprbasic</h1>
+<h1 align="center">hyprbasic</h1>
 
 <p align="center">This repository contains minimal dotfiles focused on stability and everyday use. It aims to simplify using window managers and promote a productive workspace.</p>
 
@@ -9,11 +9,7 @@ Clone the repository and run `install.sh`.
 ```
 git clone https://github.com/scara13/hyprbasic.git
 cd hyprbasic
-chmod +x install.sh
 ./install.sh
 ```
-## Disclaimers
-- There is not yet a login manager.
-- Installation script has not been tested yet.
-- HDMI does not work out of the box.
-- There is currently no uninstallation script.
+## Disclaimer
+There is currently no uninstallation script. 
