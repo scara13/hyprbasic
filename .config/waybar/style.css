@@ -4,8 +4,7 @@
 	all: unset;
     border: none;
     border-radius: 0;
-    font-weight: bold;
-	font-size: 14px;
+    font: 13px "Adwaita Sans";
 }
 
 #window {
