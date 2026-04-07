@@ -43,8 +43,9 @@ if [ "$proceed" = 'y' ]; then
 
 	cat << 'EOF' 
 	Post-installation instructions:
-	1. Reboot your system.
+	1. Reboot your system to apply the changes.
 	2. If you are using Firefox, add Pywalfox extension and run `pywalfox update` afterwards.
+	3. Read the usage guide on readme for the custom keybindings.
 
 EOF
 else 
