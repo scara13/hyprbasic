@@ -39,7 +39,7 @@ if [ "$proceed" = 'y' ]; then
 	fi
 
 	# Initialize matugen
-	matugen image images/frieren_camp.png
+	matugen image images/wallpaper/frieren_camp.png
 
 	cat << 'EOF' 
 	Post-installation instructions:
