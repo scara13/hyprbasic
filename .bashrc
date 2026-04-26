@@ -2,6 +2,7 @@
 PS1='\[\e[31m\]\w \$ \[\e[0m\]'
 
 export EDITOR=vim
+fastfetch
 
 # Wayland on firefox for faster startup speed
 export MOZ_ENABLE_WAYLAND=1
